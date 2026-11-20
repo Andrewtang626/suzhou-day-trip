@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#224f42">
+<title>苏州一日漫游 · 姑苏行记</title>
+<meta name="description" content="上海往返苏州的一日游手记。沿天平山、木渎、寒山寺、留园、虎丘，一路走到山塘街的灯影里。">
+<meta property="og:title" content="苏州一日漫游 · 姑苏行记"><meta property="og:description" content="一张时间表，六处风景。从天平山的枫林到山塘街的灯火。">
+<link rel="icon" href="mark.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#guide">跳到攻略</a>
+<header><div class="wrap bar"><a href="#itinerary" class="brand"><img src="mark.svg" alt=""><span>姑苏行记</span></a>
+<nav aria-label="攻略栏目"><a href="#itinerary" data-nav="itinerary" aria-current="page">行程时间轴</a><a href="#places" data-nav="places">景点导览</a><a href="#notes" data-nav="notes">出行备忘</a></nav>
+<button class="share" id="share"><i data-i="share"></i><span>分享攻略</span></button></div></header>
+<section class="hero" aria-labelledby="hero-title"><div class="hero-photo"></div><div class="wrap hero-inner"><div class="hero-copy">
+<div class="eyebrow"><span></span> SUZHOU TRAVEL JOURNAL</div>
+<h1 id="hero-title">苏州一日漫游</h1>
+<p>晨入天平山的枫林，暮看山塘街的灯火。</p>
+<div class="metas"><span><i data-i="train"></i>上海往返</span><span><i data-i="pin"></i>6 处景点</span><span><i data-i="clock"></i>06:06 – 19:25</span></div>
+</div><small class="photo-caption"><i data-i="book"></i>姑苏水巷 · 旅行插画</small></div></section>
+<main id="guide" class="wrap" tabindex="-1">
+<section id="itinerary" class="view"><div class="columns"><div><div class="section-line"><div class="heading"><span class="section-code">ITINERARY</span><h2>行程时间轴</h2></div><div class="filters" aria-label="筛选行程"><button data-filter="全部" aria-pressed="true">全部</button><button data-filter="游览" aria-pressed="false">游览</button><button data-filter="交通" aria-pressed="false">交通</button><button data-filter="餐饮" aria-pressed="false">餐饮</button></div></div>
+<div id="timeline"></div></div><aside><div class="panel route-panel"><div class="panel-heading"><span class="small-icon"><i data-i="route"></i></span><h3>一日路线</h3><small>游览顺序示意</small></div><div id="route-map"></div><div class="station-route"><span><i data-i="train"></i>上海站出发</span><span class="line"></span><span>苏州站往返</span></div></div>
+<div class="panel progress-panel"><div class="panel-heading"><span class="small-icon"><i data-i="stamp"></i></span><h3>我的足迹</h3><small id="progress-text"></small></div><div class="progress-track"><span id="progress-bar"></span></div><div id="quick-stops"></div></div></aside></div></section>
+<section id="places" class="view" hidden><div class="heading"><span class="section-code">PLACES</span><h2>景点导览</h2></div><div class="place-grid" id="place-grid"></div></section>
+<section id="notes" class="view" hidden><div class="heading"><span class="section-code">TRAVEL NOTES</span><h2>出行备忘</h2></div><div class="notes-grid" id="note-grid"></div></section>
+</main>
+<footer><div class="wrap"><span>姑苏行记</span><button id="credits">图像说明</button></div></footer>
+<dialog id="modal"><div id="modal-inner"></div></dialog><div role="status" id="toast" class="toast"></div>
+<script src="guide.js" defer></script></body></html>
